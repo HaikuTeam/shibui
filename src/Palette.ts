@@ -1,6 +1,11 @@
 import { Color, Toward, LinearGradient, Point2D } from '@diez/prefabs';
 import { shibuiTokens } from './designs/Shibui.sketch';
 
+/**
+ * Our base colors come in from our team's linked Sketch file `Shibui.sketch`.
+ * All additional colors are derivatives of these base colors and were created using
+ * the methods on Diez's built in `Color` prefab.
+ */
 const base = {
   fuss: shibuiTokens.colors.fuss,
   tiger: shibuiTokens.colors.tiger,

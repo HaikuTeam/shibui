@@ -1,0 +1,41 @@
+name: {{{moduleName}}}
+options:
+  bundleIdPrefix: {{{bundleIdPrefix}}}
+  deploymentTarget: 11
+targets:
+  {{{moduleName}}}:
+    type: framework
+    platform: iOS
+    sources:
+      - Sources/{{{moduleName}}}
+    info:
+      path: Sources/{{{moduleName}}}/Info.plist
+      properties:
+        CFBundleShortVersionString: {{{sdkVersion}}}
+    {{#if hasDependenciesOrStaticAssets}}
+    dependencies:
+      {{#if hasStaticAssets}}
+      - target: Static
+        embed: true
+      {{/if}}
+      {{#each dependencies}}
+      - carthage: "{{{this.carthage.name}}}"
+        findFrameworks: true
+      {{/each}}
+    {{/if}}
+    scheme: {} # Generates the shared scheme
+  {{#if hasStaticAssets}}
+  Static:
+    type: bundle
+    platform: iOS
+    info:
+      path: Sources/Static/Resources-Info.plist
+    sources:
+      {{#each assetFolderPaths}}
+      - path: "{{{this}}}"
+        type: folder
+      {{/each}}
+      {{#each assetCatalogPaths}}
+      - "{{{this}}}"
+      {{/each}}
+  {{/if}}

@@ -1,0 +1,7 @@
+import org.diez.{{case projectName style="camel"}}.*;
+
+{{case rootType style="pascal"}} designLanguage = new {{case rootType style="pascal"}}();
+Typograph typograph = designLanguage.{{path style="pascal" prefix="get" suffix="()"}};
+
+TextView textView = // Get a reference to a TextView.
+TypographKt.apply(textView, typograph);

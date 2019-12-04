@@ -1,0 +1,7 @@
+import org.diez.{{case projectName style="camel"}}.*;
+
+{{case rootType style="pascal"}} designLanguage = new {{case rootType style="pascal"}}();
+Image image = designLanguage.{{path style="pascal" prefix="get" suffix="()"}};
+
+View view = // Get a reference to a View.
+ImageKt.loadBackgroundImage(view, image);

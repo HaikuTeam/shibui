@@ -1,0 +1,11 @@
+import org.diez.{{case projectName style="camel"}}.*;
+
+{{case rootType style="pascal"}} designLanguage = new {{case rootType style="pascal"}}();
+LinearGradient linearGradient = designLanguage.{{path style="pascal" prefix="get" suffix="()"}};
+
+PaintDrawable drawable = new PaintDrawable();
+drawable.setShape(new RectShape());
+drawable.setShaderFactory(linearGradient.getShaderFactory());
+
+View view = // Get a reference to a View.
+view.setBackground(drawable);

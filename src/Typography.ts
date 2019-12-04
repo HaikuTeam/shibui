@@ -1,33 +1,8 @@
-import {Typograph, Font, TextAlignment} from '@diez/prefabs';
-import { palette } from './Palette';
+import { shibuiTokens } from './designs/Shibui.sketch'
 
-const Fonts = {
-  SourceSansPro: {
-    Regular: Font.fromFile('assets/SourceSansPro-Regular.ttf'),
-  },
-}
-
-/**
- * Typographs encapsulate type styles with support for a specific font, font size,
- * and color. More typograph properties are coming soon.
- */
 export const typography = {
-  heading1: new Typograph({
-    font: Fonts.SourceSansPro.Regular,
-    fontSize: 24,
-    color: palette.colorsMapped.text,
-  }),
-
-  body: new Typograph({
-    font: Fonts.SourceSansPro.Regular,
-    fontSize: 18,
-    color: palette.colorsMapped.text,
-    alignment: TextAlignment.Center,
-  }),
-
-  caption: new Typograph({
-    font: Fonts.SourceSansPro.Regular,
-    fontSize: 14,
-    color: palette.colorsMapped.text,
-  }),
+  heading1: shibuiTokens.typography.heading1,
+  heading2: shibuiTokens.typography.heading2,
+  heading3: shibuiTokens.typography.heading3,
+  body: shibuiTokens.typography.body
 }

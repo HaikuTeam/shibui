@@ -1,8 +1,6 @@
 import { Color, Toward, LinearGradient, Point2D } from '@diez/prefabs';
 import { shibuiTokens } from './designs/Shibui.sketch';
-/**
- * Our design language's base colors. While these are all exported, please prefer the semantic mappings. e.g. `PrimaryButtonColor`
- */
+
 const base = {
   fuss: shibuiTokens.colors.fuss,
   tiger: shibuiTokens.colors.tiger,
@@ -13,8 +11,14 @@ const base = {
   seattle: shibuiTokens.colors.seattle,
 }
 
+/**
+ * We use this scaling value to create our derivatives; e.g. `base.fuss.lighten(colorScale)`
+ */
 const colorScale = .07
 
+/**
+ * Our design language's base colors. While these are all exported, please prefer the semantic mappings found in #colorsMapped. e.g. `borderColor`
+ */
 const colors = {
   fuss10: base.fuss.lighten(colorScale * 4),
   fuss20: base.fuss.lighten(colorScale * 3),
@@ -70,6 +74,7 @@ const colors = {
   amethyst70: base.amethyst.darken(colorScale * 2),
   amethyst80: base.amethyst.darken(colorScale * 3),
   amethyst90: base.amethyst.darken(colorScale * 4),
+  amethystMuted: base.seattle.fade(.3),
   seattle10: base.seattle.lighten(colorScale * 4),
   seattle20: base.seattle.lighten(colorScale * 3),
   seattle30: base.seattle.lighten(colorScale * 2),
@@ -79,14 +84,12 @@ const colors = {
   seattle70: base.seattle.darken(colorScale * 2),
   seattle80: base.seattle.darken(colorScale * 3),
   seattle90: base.seattle.darken(colorScale * 4),
+  seattleMuted: base.seattle.fade(.6),
   ivory: shibuiTokens.colors.ivory,
+  ivoryMuted: base.seattle.fade(.42),
   graphite: shibuiTokens.colors.graphite,
   midnight: shibuiTokens.colors.midnight,
 }
-
-// const gradients = {
-//   headerBackground: LinearGradient.make(Toward.Bottom, base.darkPurple, base.black),
-// }
 
 /**
  * Semantically mapped colors
@@ -94,10 +97,15 @@ const colors = {
 const colorsMapped = {
   contentBackground: colors.ivory,
   text: colors.midnight,
+  primary: colors.fuss50,
+  secondary: colors.tiger50,
+  borderColor: colors.seattleMuted,
 }
 
+/**
+ * Our base colors, semantically mapped colors, and gradients
+ */
 export const palette = {
   colors,
-  // gradients,
   colorsMapped
 }

@@ -1,6 +1,12 @@
-import { Image } from '@diez/prefabs';
+import { shibuiSlices } from "./designs/Shibui.sketch";
 
 export const icons = {
-  logo: Image.responsive('assets/logo.png', 52, 48),
-  masthead: Image.responsive('assets/masthead.png', 208, 88),
+  iconDismiss: shibuiSlices.iconDismiss,
+  iconDismissAlt: shibuiSlices.iconDismissAlt,
+  iconCheckmark: shibuiSlices.iconCheckmark,
+  iconCheckmarkAlt: shibuiSlices.iconCheckmarkAlt,
+  iconHeart: shibuiSlices.iconHeart,
+  iconHeartAlt: shibuiSlices.iconHeartAlt,
+  iconFork: shibuiSlices.iconFork,
+  iconForkAlt: shibuiSlices.iconForkAlt,
 }

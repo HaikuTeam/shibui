@@ -1,4 +1,5 @@
-import { Lottie } from '@diez/prefabs';
+import { animations } from './Animations';
+import { borderRadii } from './BorderRadii';
 import { palette } from './Palette';
 import { icons } from './Icons';
 import { images } from './Images';
@@ -9,11 +10,12 @@ import { copywriting } from './Localization';
 
 export const designLanguage = { 
   palette,
-  icons,
   images,
-  layout,
-  loadingAnimation: Lottie.fromJson('assets/loadingAnimation.json', false),
-  localization: copywriting,
-  shadows,
+  icons,
   typography,
+  animations,
+  layout,
+  borderRadii,
+  shadows,
+  localization: copywriting,
 }

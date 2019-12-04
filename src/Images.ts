@@ -1,6 +1,14 @@
-import { Image } from '@diez/prefabs';
+import { shibuiSlices } from './designs/Shibui.sketch'
 
 export const images = {
-  logo: Image.responsive('assets/logo.png', 52, 48),
-  masthead: Image.responsive('assets/masthead.png', 208, 88),
-}
+  diezLogoAlt: shibuiSlices.diezLogoAlt,
+  diezLogo: shibuiSlices.diezLogo,
+  animatorLogo: shibuiSlices.animatorLogo,
+  animatorLogoAlt: shibuiSlices.animatorLogoAlt,
+  brandbookLogo: shibuiSlices.brandbookLogo,
+  brandbookLogoAlt: shibuiSlices.brandbookLogoAlt,
+  haikuLogoAlt: shibuiSlices.haikuLogoAlt,
+  haikuSymbolAlt: shibuiSlices.haikuSymbolAlt,
+  haikuLogo: shibuiSlices.haikuLogo,
+  haikuSymbol: shibuiSlices.haikuSymbol,
+} 

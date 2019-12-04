@@ -1,4 +1,4 @@
-const spacing = {
+export const spacing = {
   xxs: 2,
   xs: 4,
   sm: 8,
@@ -8,7 +8,7 @@ const spacing = {
   xxl: 80
 }
 
-const sizing = {
+export const sizing = {
   xxs: 96,
   xs: 112,
   sm: 144,

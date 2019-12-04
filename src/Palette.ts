@@ -1,16 +1,16 @@
 import { Color, Toward, LinearGradient, Point2D } from '@diez/prefabs';
-
+import { shibuiTokens } from './designs/Shibui.sketch';
 /**
  * Our design language's base colors. While these are all exported, please prefer the semantic mappings. e.g. `PrimaryButtonColor`
  */
 const base = {
-  fuss: Color.hex('#E934F2'),
-  tiger: Color.hex('#F15D4A'),
-  marigold: Color.hex('#FFAC39'),
-  clover: Color.hex('#A3CE32'),
-  cyan: Color.hex('#04B6CB'),
-  amethyst: Color.hex('#8934FF'),
-  seattle: Color.hex('#C8CBCF'),
+  fuss: shibuiTokens.colors.fuss,
+  tiger: shibuiTokens.colors.tiger,
+  marigold: shibuiTokens.colors.marigold,
+  clover: shibuiTokens.colors.clover,
+  cyan: shibuiTokens.colors.cyan,
+  amethyst: shibuiTokens.colors.amethyst,
+  seattle: shibuiTokens.colors.seattle,
 }
 
 const colorScale = .07
@@ -79,9 +79,9 @@ const colors = {
   seattle70: base.seattle.darken(colorScale * 2),
   seattle80: base.seattle.darken(colorScale * 3),
   seattle90: base.seattle.darken(colorScale * 4),
-  ivory: Color.hex('#FAFBFC'),
-  midnight: Color.hex('#070E18'),
-  graphite: Color.hex('#222B39')
+  ivory: shibuiTokens.colors.ivory,
+  graphite: shibuiTokens.colors.graphite,
+  midnight: shibuiTokens.colors.midnight,
 }
 
 // const gradients = {

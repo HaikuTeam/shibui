@@ -8,14 +8,13 @@ const Layout_1 = require("./Layout");
 const Shadows_1 = require("./Shadows");
 const Typography_1 = require("./Typography");
 const Localization_1 = require("./Localization");
-// import {Margin} from './components/Margin';
 exports.designLanguage = {
     palette: Palette_1.palette,
     icons: Icons_1.icons,
     images: Images_1.images,
+    layout: Layout_1.layout,
     loadingAnimation: prefabs_1.Lottie.fromJson('assets/loadingAnimation.json', false),
     localization: Localization_1.copywriting,
-    layout: Layout_1.layout,
     shadows: Shadows_1.shadows,
     typography: Typography_1.typography,
 };

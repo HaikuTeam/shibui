@@ -142,7 +142,7 @@ Object.defineProperties(Color.prototype, {
   },
 });
 
-class Palette {
+class Colors {
   constructor({
     fuss10 = {h: 0.8254385964912281, s: 0.8796296296296295, l: 0.8564705882352941, a: 1},
     fuss20 = {h: 0.8254385964912281, s: 0.8796296296296295, l: 0.786470588235294, a: 1},
@@ -281,12 +281,12 @@ class Palette {
 }
 
 
-module.exports.Palette = Palette;
+module.exports.Colors = Colors;
 
 /**
 Semantically mapped colors
 */
-class PaletteMapped {
+class ColorsMapped {
   constructor({
     contentBackground = {h: 0.5833333333333345, s: 0.25000000000000266, l: 0.9843137254901961, a: 1},
     text = {h: 0.5980392156862745, s: 0.5483870967741935, l: 0.060784313725490195, a: 1}
@@ -297,20 +297,20 @@ class PaletteMapped {
 }
 
 
-module.exports.PaletteMapped = PaletteMapped;
+module.exports.ColorsMapped = ColorsMapped;
 
-class Colors {
+class Palette {
   constructor({
-    palette = {},
-    paletteMapped = {}
+    colors = {},
+    colorsMapped = {}
   } = {}) {
-    this.palette = new Palette(palette);
-    this.paletteMapped = new PaletteMapped(paletteMapped);
+    this.colors = new Colors(colors);
+    this.colorsMapped = new ColorsMapped(colorsMapped);
   }
 }
 
 
-module.exports.Colors = Colors;
+module.exports.Palette = Palette;
 
 /**
 Provides a container for referencing local assets, which can be bridged by compilers to embed images, SVGs,
@@ -448,11 +448,19 @@ Object.defineProperties(Image.prototype, {
   },
 });
 
-/**
-In addition to colors and typography, you can also collect other types of
-design language primitives in components as well — such as images, icons &
-animations.
-*/
+class Icons {
+  constructor({
+    logo = {file: {src: "assets/logo.png", type: "image"}, file2x: {src: "assets/logo@2x.png", type: "image"}, file3x: {src: "assets/logo@3x.png", type: "image"}, size: {width: 52, height: 48}},
+    masthead = {file: {src: "assets/masthead.png", type: "image"}, file2x: {src: "assets/masthead@2x.png", type: "image"}, file3x: {src: "assets/masthead@3x.png", type: "image"}, size: {width: 208, height: 88}}
+  } = {}) {
+    this.logo = new Image(logo);
+    this.masthead = new Image(masthead);
+  }
+}
+
+
+module.exports.Icons = Icons;
+
 class Images {
   constructor({
     logo = {file: {src: "assets/logo.png", type: "image"}, file2x: {src: "assets/logo@2x.png", type: "image"}, file3x: {src: "assets/logo@3x.png", type: "image"}, size: {width: 52, height: 48}},
@@ -564,61 +572,66 @@ class Copywriting {
 
 module.exports.Copywriting = Copywriting;
 
-/**
-Here we create a custom reusable component for describing layout margins.
-*/
-class Margin {
+class Spacing {
   constructor({
-    top,
-    bottom,
-    left,
-    right
-  }) {
-  /**
-  Defining the interface of your component's data enables you to instantiate your own
-reusable components.
-  */
-    this.top = top;
-  /**
-  Defining the interface of your component's data enables you to instantiate your own
-reusable components.
-  */
-    this.bottom = bottom;
-  /**
-  Defining the interface of your component's data enables you to instantiate your own
-reusable components.
-  */
-    this.left = left;
-  /**
-  Defining the interface of your component's data enables you to instantiate your own
-reusable components.
-  */
-    this.right = right;
-  }
-}
-
-
-module.exports.Margin = Margin;
-
-/**
-You can even collect your own custom components.
-*/
-class LayoutValues {
-  constructor({
-    spacingSmall = 5,
-    spacingMedium = 25,
-    spacingLarge = 40,
-    contentMargin = {top: 40, bottom: 10, left: 10, right: 10}
+    xxs = 2,
+    xs = 4,
+    sm = 8,
+    md = 16,
+    lg = 32,
+    xl = 64,
+    xxl = 80
   } = {}) {
-    this.spacingSmall = spacingSmall;
-    this.spacingMedium = spacingMedium;
-    this.spacingLarge = spacingLarge;
-    this.contentMargin = new Margin(contentMargin);
+    this.xxs = xxs;
+    this.xs = xs;
+    this.sm = sm;
+    this.md = md;
+    this.lg = lg;
+    this.xl = xl;
+    this.xxl = xxl;
   }
 }
 
 
-module.exports.LayoutValues = LayoutValues;
+module.exports.Spacing = Spacing;
+
+class Sizing {
+  constructor({
+    xxs = 96,
+    xs = 112,
+    sm = 144,
+    md = 192,
+    lg = 384,
+    xl = 768,
+    xxl = 960,
+    xxxl = 1280
+  } = {}) {
+    this.xxs = xxs;
+    this.xs = xs;
+    this.sm = sm;
+    this.md = md;
+    this.lg = lg;
+    this.xl = xl;
+    this.xxl = xxl;
+    this.xxxl = xxxl;
+  }
+}
+
+
+module.exports.Sizing = Sizing;
+
+class Layout {
+  constructor({
+    spacing = {},
+    sizing = {}
+  } = {}) {
+    this.spacing = new Spacing(spacing);
+    this.sizing = new Sizing(sizing);
+  }
+}
+
+
+module.exports.Layout = Layout;
 
 /**
 Provides a two dimensional point.
@@ -919,19 +932,21 @@ module.exports.Typography = Typography;
 
 class DesignLanguage {
   constructor({
-    colors = {},
+    palette = {},
+    icons = {},
     images = {},
     loadingAnimation = {file: {src: "assets/loadingAnimation.json", type: "raw"}, loop: false, autoplay: true},
     localization = {},
-    layoutValues = {},
+    layout = {},
     shadows = {},
     typography = {}
   } = {}) {
-    this.colors = new Colors(colors);
+    this.palette = new Palette(palette);
+    this.icons = new Icons(icons);
     this.images = new Images(images);
     this.loadingAnimation = new Lottie(loadingAnimation);
     this.localization = new Copywriting(localization);
-    this.layoutValues = new LayoutValues(layoutValues);
+    this.layout = new Layout(layout);
     this.shadows = new Shadows(shadows);
     this.typography = new Typography(typography);
   }

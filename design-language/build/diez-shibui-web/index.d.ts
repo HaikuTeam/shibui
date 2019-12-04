@@ -33,7 +33,7 @@ export declare class Color {
   outlineColorStyle: {outlineColor: string};
 }
 
-export declare class Palette {
+export declare class Colors {
   fuss10: Color;
   fuss20: Color;
   fuss30: Color;
@@ -102,14 +102,14 @@ export declare class Palette {
   graphite: Color;
 }
 
-export declare class PaletteMapped {
+export declare class ColorsMapped {
   contentBackground: Color;
   text: Color;
 }
 
-export declare class Colors {
-  palette: Palette;
-  paletteMapped: PaletteMapped;
+export declare class Palette {
+  colors: Colors;
+  colorsMapped: ColorsMapped;
 }
 
 export declare class File {
@@ -147,6 +147,11 @@ export declare class Image {
    * CSS declarations for the `background-image` CSS property.
    */
   backgroundImageStyle: {backgroundImage: string};
+}
+
+export declare class Icons {
+  logo: Image;
+  masthead: Image;
 }
 
 export declare class Images {
@@ -189,18 +194,30 @@ export declare class Copywriting {
   es: Es;
 }
 
-export declare class Margin {
-  top: number;
-  bottom: number;
-  left: number;
-  right: number;
+export declare class Spacing {
+  xxs: number;
+  xs: number;
+  sm: number;
+  md: number;
+  lg: number;
+  xl: number;
+  xxl: number;
 }
 
-export declare class LayoutValues {
-  spacingSmall: number;
-  spacingMedium: number;
-  spacingLarge: number;
-  contentMargin: Margin;
+export declare class Sizing {
+  xxs: number;
+  xs: number;
+  sm: number;
+  md: number;
+  lg: number;
+  xl: number;
+  xxl: number;
+  xxxl: number;
+}
+
+export declare class Layout {
+  spacing: Spacing;
+  sizing: Sizing;
 }
 
 export declare class Point2D {
@@ -298,11 +315,12 @@ export declare class Typography {
 }
 
 export declare class DesignLanguage extends RootComponent {
-  colors: Colors;
+  palette: Palette;
+  icons: Icons;
   images: Images;
   loadingAnimation: Lottie;
   localization: Copywriting;
-  layoutValues: LayoutValues;
+  layout: Layout;
   shadows: Shadows;
   typography: Typography;
 }

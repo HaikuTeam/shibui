@@ -15,7 +15,7 @@ const base = {
 
 const colorScale = .07
 
-const palette = {
+const colors = {
   fuss10: base.fuss.lighten(colorScale * 4),
   fuss20: base.fuss.lighten(colorScale * 3),
   fuss30: base.fuss.lighten(colorScale * 2),
@@ -91,13 +91,13 @@ const palette = {
 /**
  * Semantically mapped colors
  */
-const paletteMapped = {
-  contentBackground: palette.ivory,
-  text: palette.midnight,
+const colorsMapped = {
+  contentBackground: colors.ivory,
+  text: colors.midnight,
 }
 
-export const colors = {
-  palette,
+export const palette = {
+  colors,
   // gradients,
-  paletteMapped
+  colorsMapped
 }

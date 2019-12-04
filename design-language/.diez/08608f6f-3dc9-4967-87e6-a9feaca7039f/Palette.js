@@ -14,7 +14,7 @@ const base = {
     seattle: prefabs_1.Color.hex('#C8CBCF'),
 };
 const colorScale = .07;
-const colors = {
+const palette = {
     fuss10: base.fuss.lighten(colorScale * 4),
     fuss20: base.fuss.lighten(colorScale * 3),
     fuss30: base.fuss.lighten(colorScale * 2),
@@ -88,12 +88,12 @@ const colors = {
 /**
  * Semantically mapped colors
  */
-const colorsMapped = {
-    contentBackground: colors.ivory,
-    text: colors.midnight,
+const paletteMapped = {
+    contentBackground: palette.ivory,
+    text: palette.midnight,
 };
-exports.palette = {
-    colors,
+exports.colors = {
+    palette,
     // gradients,
-    colorsMapped
+    paletteMapped
 };

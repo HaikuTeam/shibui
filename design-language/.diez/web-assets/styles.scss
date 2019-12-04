@@ -2,7 +2,7 @@
   font-family: "SourceSansPro-Regular";
   font-weight: 400;
   font-style: normal;
-  src: local("SourceSansPro-Regular"), url("/diez/assets/SourceSansPro-Regular.ttf");
+  src: local("SourceSansPro-Regular"), url("http://192.168.1.35:8080/assets/SourceSansPro-Regular.ttf");
 }
 
 $colors-fuss10: hsla(297.1578947368421, 87.96296296296295%, 85.6470588235294%, 1);
@@ -73,27 +73,27 @@ $colors-midnight: hsla(215.2941176470588, 54.83870967741935%, 6.078431372549019%
 $colors-graphite: hsla(216.52173913043478, 25.27472527472528%, 17.84313725490196%, 1);
 $colors-mapped-content-background: hsla(210.00000000000043, 25.000000000000266%, 98.43137254901961%, 1);
 $colors-mapped-text: hsla(215.2941176470588, 54.83870967741935%, 6.078431372549019%, 1);
-$icons-logo: url("/diez/assets/logo.png");
-$icons-logo-2x: url("/diez/assets/logo@2x.png");
-$icons-logo-3x: url("/diez/assets/logo@3x.png");
+$icons-logo: url("http://192.168.1.35:8080/assets/logo.png");
+$icons-logo-2x: url("http://192.168.1.35:8080/assets/logo@2x.png");
+$icons-logo-3x: url("http://192.168.1.35:8080/assets/logo@3x.png");
 $icons-logo-width: 52px;
 $icons-logo-height: 48px;
 $icons-logo-size: 52px 48px;
-$icons-masthead: url("/diez/assets/masthead.png");
-$icons-masthead-2x: url("/diez/assets/masthead@2x.png");
-$icons-masthead-3x: url("/diez/assets/masthead@3x.png");
+$icons-masthead: url("http://192.168.1.35:8080/assets/masthead.png");
+$icons-masthead-2x: url("http://192.168.1.35:8080/assets/masthead@2x.png");
+$icons-masthead-3x: url("http://192.168.1.35:8080/assets/masthead@3x.png");
 $icons-masthead-width: 208px;
 $icons-masthead-height: 88px;
 $icons-masthead-size: 208px 88px;
-$images-logo: url("/diez/assets/logo.png");
-$images-logo-2x: url("/diez/assets/logo@2x.png");
-$images-logo-3x: url("/diez/assets/logo@3x.png");
+$images-logo: url("http://192.168.1.35:8080/assets/logo.png");
+$images-logo-2x: url("http://192.168.1.35:8080/assets/logo@2x.png");
+$images-logo-3x: url("http://192.168.1.35:8080/assets/logo@3x.png");
 $images-logo-width: 52px;
 $images-logo-height: 48px;
 $images-logo-size: 52px 48px;
-$images-masthead: url("/diez/assets/masthead.png");
-$images-masthead-2x: url("/diez/assets/masthead@2x.png");
-$images-masthead-3x: url("/diez/assets/masthead@3x.png");
+$images-masthead: url("http://192.168.1.35:8080/assets/masthead.png");
+$images-masthead-2x: url("http://192.168.1.35:8080/assets/masthead@2x.png");
+$images-masthead-3x: url("http://192.168.1.35:8080/assets/masthead@3x.png");
 $images-masthead-width: 208px;
 $images-masthead-height: 88px;
 $images-masthead-size: 208px 88px;
@@ -738,62 +738,62 @@ $sizing-xxxl-rem: 1280rem;
 }
 
 @mixin icons-logo-background-image {
-  background-image: url("/diez/assets/logo.png");
+  background-image: url("http://192.168.1.35:8080/assets/logo.png");
   width: 52px;
   height: 48px;
   background-size: 52px 48px;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    background-image: url("/diez/assets/logo@2x.png");
+    background-image: url("http://192.168.1.35:8080/assets/logo@2x.png");
   }
 
   @media (min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
-    background-image: url("/diez/assets/logo@3x.png");
+    background-image: url("http://192.168.1.35:8080/assets/logo@3x.png");
   }
 }
 
 @mixin icons-masthead-background-image {
-  background-image: url("/diez/assets/masthead.png");
+  background-image: url("http://192.168.1.35:8080/assets/masthead.png");
   width: 208px;
   height: 88px;
   background-size: 208px 88px;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    background-image: url("/diez/assets/masthead@2x.png");
+    background-image: url("http://192.168.1.35:8080/assets/masthead@2x.png");
   }
 
   @media (min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
-    background-image: url("/diez/assets/masthead@3x.png");
+    background-image: url("http://192.168.1.35:8080/assets/masthead@3x.png");
   }
 }
 
 @mixin images-logo-background-image {
-  background-image: url("/diez/assets/logo.png");
+  background-image: url("http://192.168.1.35:8080/assets/logo.png");
   width: 52px;
   height: 48px;
   background-size: 52px 48px;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    background-image: url("/diez/assets/logo@2x.png");
+    background-image: url("http://192.168.1.35:8080/assets/logo@2x.png");
   }
 
   @media (min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
-    background-image: url("/diez/assets/logo@3x.png");
+    background-image: url("http://192.168.1.35:8080/assets/logo@3x.png");
   }
 }
 
 @mixin images-masthead-background-image {
-  background-image: url("/diez/assets/masthead.png");
+  background-image: url("http://192.168.1.35:8080/assets/masthead.png");
   width: 208px;
   height: 88px;
   background-size: 208px 88px;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    background-image: url("/diez/assets/masthead@2x.png");
+    background-image: url("http://192.168.1.35:8080/assets/masthead@2x.png");
   }
 
   @media (min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
-    background-image: url("/diez/assets/masthead@3x.png");
+    background-image: url("http://192.168.1.35:8080/assets/masthead@3x.png");
   }
 }
 

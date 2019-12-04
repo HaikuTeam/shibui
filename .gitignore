@@ -1,0 +1,5 @@
+.diez/
+node_modules/
+.DS_Store
+lib/
+build/

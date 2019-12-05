@@ -1,5 +1,6 @@
 .diez/
-node_modules/
 .DS_Store
+.npmrc 
+node_modules/
 lib/
 build/

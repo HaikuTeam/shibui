@@ -22,6 +22,6 @@
     "demo": "diez start web"
   },
   "files": [
-    "build/diez-shibui-web/"
+    "build/diez-haiku-shibui-web/"
   ]
 }

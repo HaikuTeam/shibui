@@ -3,7 +3,7 @@
   "private": false,
   "license": "apache-2.0",
   "main": "build/diez-shibui-web/index.js",
-  "version": "10.0.2",
+  "version": "10.0.3",
   "dependencies": {
     "@diez/engine": "^10.0.0",
     "@diez/prefabs": "^10.0.0"

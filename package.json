@@ -1,6 +1,7 @@
 {
-  "name": "shibui",
-  "private": true,
+  "name": "@haiku/shibui",
+  "private": false,
+  "license": "apache-2.0",
   "main": "lib/index.js",
   "version": "10.0.1",
   "dependencies": {
@@ -19,5 +20,8 @@
   "scripts": {
     "start": "diez start",
     "demo": "diez start web"
-  }
+  },
+  "files": [
+    "build/diez-shibui-web/"
+  ]
 }

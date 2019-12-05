@@ -2,8 +2,8 @@
   "name": "@haiku/shibui",
   "private": false,
   "license": "apache-2.0",
-  "main": "build/diez-shibui-web/index.js",
-  "version": "10.0.4",
+  "main": "build/diez-haiku-shibui-web/index.js",
+  "version": "10.0.5",
   "dependencies": {
     "@diez/engine": "^10.0.0",
     "@diez/prefabs": "^10.0.0"

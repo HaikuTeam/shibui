@@ -42,6 +42,8 @@ $ yarn add @haiku/shibui
 
 Then consume the design language via JavaScript/TypeScript or CSS/SCSS:
 
+JavaScript/Typescript:
+
 ```js
 import {Diez, DesignLanguage} from '@haiku/shibui';
 
@@ -50,7 +52,9 @@ new Diez(DesignLanguage).attach((tokens) => {
 });
 ```
 
-```css
+CSS/SCSS:
+
+```scss
 @import '@haiku/shibui/styles.scss';
 
 h1 {
@@ -60,11 +64,11 @@ h1 {
 
 **iOS**
 
-Coming soon, in the meantime you can [compile from the source](#compiling-from-the-source)
+Coming soon, in the meantime you can [compile from the source](#compiling-from-the-source).
 
 **Android**
 
-Coming soon, in the meantime you can [compile from the source](#compiling-from-the-source)
+Coming soon, in the meantime you can [compile from the source](#compiling-from-the-source).
 
 ### Compiling from the source
 
@@ -97,4 +101,4 @@ Simply open `/designs/shibui.sketch` in Sketch and make some changes.  Once save
 Feel free to fork this repo and explore.  You can easily create your own theme or brand on this chassis — or feel free to make contributions back to our own design language!  Your changes may ship to prod.
 
 [diez-site]: https://diez.org
-[diez-guides]: https://diez.org/guides
+[diez-guides]: https://diez.org/getting-started/

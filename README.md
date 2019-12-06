@@ -34,8 +34,8 @@ TODO
 
 ![image](https://user-images.githubusercontent.com/1357566/70190512-f80bdd80-16aa-11ea-84d6-0bc1ae452f85.png)
 
-`/designs/shibui.sketch` is the living source of truth for many of Shibui's design tokens.  [Diez](https://diez.org)
+`/designs/shibui.sketch` is the living source of truth for many of Shibui's design tokens.
 
-Simply open `/designs/shibui.sketch` and make some changes.  Once saved, you can run `yarn diez exact` from the terminal and the changes will propagate to the design language in TypeScript.
+Simply open `/designs/shibui.sketch` in Sketch and make some changes.  Once saved, you can run `yarn diez exact` from the terminal and the changes will propagate to the design language in TypeScript.
 
 Feel free to fork this repo and explore.  You can easily create your own theme or brand on this chassis — or feel free to make contributions back to our own design language!  Your changes may ship to prod.

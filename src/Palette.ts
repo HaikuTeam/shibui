@@ -94,7 +94,7 @@ const colors = {
   amethyst70: base.amethyst.darken(colorScale * 2),
   amethyst80: base.amethyst.darken(colorScale * 3),
   amethyst90: base.amethyst.darken(colorScale * 4),
-  amethystMuted: base.seattle.fade(.3),
+  amethystMuted: base.amethyst.fade(.3),
   seattle10: base.seattle.lighten(colorScale * 4),
   seattle20: base.seattle.lighten(colorScale * 3),
   seattle30: base.seattle.lighten(colorScale * 2),

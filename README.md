@@ -7,7 +7,7 @@ The Shibui codebase is a collection of design files, code, scripts, compilers, a
 
 Changes made to Shibui via this repo will propagate across Haiku websites native apps.
 
-*This project is powered by the open source project [Diez](https://diez.org).  Diez enables this whole project to be maintained in a single TypeScript codebase.  Diez is built & maintained by the Haiku team and the Diez community.*
+*This project is powered by the open source project [Diez][diez-site].  Diez enables this whole project to be maintained in a single TypeScript codebase.  Diez is built & maintained by the Haiku team and the Diez community.*
 
 ## Why a design language?
 
@@ -27,8 +27,64 @@ We started our design system "language-first," but UI components are coming soon
 # Getting started
 
 ## Developers
-TODO
 
+Developers can consume this package via pre-built SDKs for each platform or by cloning and compiling this source with [Diez][diez-site].
+
+### Pre-built SDKs
+
+**Web**
+
+First, install Shibui as a dependency:
+
+```
+$ yarn add @haiku/shibui
+```
+
+Then consume the design language via JavaScript/TypeScript or CSS/SCSS:
+
+```js
+import {Diez, DesignLanguage} from '@haiku/shibui';
+
+new Diez(DesignLanguage).attach((tokens) => {
+  // ...
+});
+```
+
+```css
+@import '@haiku/shibui/styles.scss';
+
+h1 {
+  @include shibui-typography-heading1();
+}
+```
+
+**iOS**
+
+Coming soon, in the meantime you can [compile from the source](#compiling-from-the-source)
+
+**Android**
+
+Coming soon, in the meantime you can [compile from the source](#compiling-from-the-source)
+
+### Compiling from the source
+
+First, clone and set-up the repo:
+
+```shell
+$ git clone git@github.com:HaikuTeam/shibui.git
+$ cd shibui
+$ yarn install
+```
+
+Then, compile the design language to your desired SDK:
+
+```shell
+$ yarn diez compile -t [web|ios|android]
+```
+
+Look for the SDK files in `build/diez-haiku-shibui-[web|ios|android]`, and consume accordingly depending on your target platform.
+
+If you need more info, check out the [Diez guides][diez-guides].
 
 ## Designers
 
@@ -39,3 +95,6 @@ TODO
 Simply open `/designs/shibui.sketch` in Sketch and make some changes.  Once saved, you can run `yarn diez exact` from the terminal and the changes will propagate to the design language in TypeScript.
 
 Feel free to fork this repo and explore.  You can easily create your own theme or brand on this chassis — or feel free to make contributions back to our own design language!  Your changes may ship to prod.
+
+[diez-site]: https://diez.org
+[diez-guides]: https://diez.org/guides

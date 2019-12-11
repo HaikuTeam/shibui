@@ -5,6 +5,7 @@
   "main": "build/diez-haiku-shibui-web/index.js",
   "version": "10.0.8",
   "dependencies": {
+    "@diez/docs": "https://inkstone.haiku.ai/v0/diez/package/9qYwKqnYa/@diez+docs/10.1.0",
     "@diez/engine": "^10.0.0",
     "@diez/prefabs": "^10.0.0"
   },
@@ -13,13 +14,14 @@
     "@diez/extractors": "^10.0.1",
     "@diez/start": "^10.0.1",
     "@diez/stdlib": "^10.0.1",
-    "diez": "^10.0.1",
+    "diez": "^10.1.0",
     "semver": "^6.0.0",
     "typescript": "^3.6.2"
   },
   "scripts": {
     "start": "diez start",
-    "demo": "diez start web"
+    "demo": "diez start web",
+    "docs": "yarn diez compile -t docs && cd build/docs && yarn && yarn serve"
   },
   "files": [
     "build/diez-haiku-shibui-web/"

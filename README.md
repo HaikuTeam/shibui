@@ -1,5 +1,5 @@
 # Shibui 渋い
-Shibui is the design language driving [Haiku's](https://haikuforteams.com) apps & websites.  Browse the design language in our up-to-the-moment [docs](https://haikuforteams.com/shibui).
+Shibui is the design language driving [Haiku's](https://haikuforteams.com) apps & websites.  Browse the design language in our up-to-the-moment [docs](https://shibui.haikuforteams.com).
 
 ![image](https://user-images.githubusercontent.com/2100885/70292363-ebfb4b00-1792-11ea-937d-42475c44742f.png)
 

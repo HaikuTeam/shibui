@@ -22,7 +22,7 @@
     "start": "diez start",
     "demo": "diez start web",
     "docs": "yarn diez compile -t docs && cd build/docs && yarn && yarn serve",
-    "netlify-docs": "./scripts/netlify-docs"
+    "netlify-docs": "./scripts/netlify-docs.sh"
   },
   "files": [
     "build/diez-haiku-shibui-web/"

@@ -1,6 +1,7 @@
 .diez/
 .DS_Store
-.npmrc 
+.npmrc
 node_modules/
 lib/
 build/
+netlify/

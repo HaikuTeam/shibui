@@ -33,14 +33,14 @@
     stack-trace "^0.0.10"
     typed-errors "^1.1.0"
 
-"@diez/cli-core@^10.1.0":
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/@diez/cli-core/-/cli-core-10.1.0.tgz#a5c234efb6502e5ace8d0bbca5e7b7934835c557"
-  integrity sha512-HRlNbTu7vD6q076Zd/fGo3LNLdyNZv9BhcV0ZynnyiPEPb7DM/px0KxnAk7kMd7M/fzBzz/1yXO/Ds4RfL42uA==
+"@diez/cli-core@^10.2.0-beta.2":
+  version "10.2.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@diez/cli-core/-/cli-core-10.2.0-beta.2.tgz#8298f64ee1d3a5bd0c8235a2c5b81d237a0da7c5"
+  integrity sha512-nZhNWTkmeG0O3+1RvDLEmkR+yldkxuoyzJAZvEm+slr16lgqqNLNMxHGjzIwdS8OORNJr1YJnl5GYRNFiYZ4BQ==
   dependencies:
-    "@diez/engine" "^10.1.0"
-    "@diez/sdk-inkstone" "^10.1.0"
-    "@diez/storage" "^10.1.0"
+    "@diez/engine" "^10.2.0-beta.2"
+    "@diez/sdk-inkstone" "^10.2.0-beta.2"
+    "@diez/storage" "^10.2.0-beta.2"
     "@sentry/node" "^5.2.0"
     async "^2.6.2"
     chalk "^2.4.2"
@@ -52,14 +52,14 @@
     stack-trace "^0.0.10"
     typed-errors "^1.1.0"
 
-"@diez/cli-core@^10.2.0-beta.2":
-  version "10.2.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@diez/cli-core/-/cli-core-10.2.0-beta.2.tgz#8298f64ee1d3a5bd0c8235a2c5b81d237a0da7c5"
-  integrity sha512-nZhNWTkmeG0O3+1RvDLEmkR+yldkxuoyzJAZvEm+slr16lgqqNLNMxHGjzIwdS8OORNJr1YJnl5GYRNFiYZ4BQ==
+"@diez/cli-core@^10.3.0":
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/@diez/cli-core/-/cli-core-10.3.0.tgz#fce12a26d41bc583c11fb6c7a345f51d0c67db14"
+  integrity sha512-4mUQLml3S2ougLQDcvl7zr7nYWs4jxwmGrkLARFhvmYp6a0BJ2ZA5+CDtmS5I8qhoM/SpHncuCfUsid+az7Wew==
   dependencies:
-    "@diez/engine" "^10.2.0-beta.2"
-    "@diez/sdk-inkstone" "^10.2.0-beta.2"
-    "@diez/storage" "^10.2.0-beta.2"
+    "@diez/engine" "^10.3.0"
+    "@diez/sdk-inkstone" "^10.3.0"
+    "@diez/storage" "^10.3.0"
     "@sentry/node" "^5.2.0"
     async "^2.6.2"
     chalk "^2.4.2"
@@ -122,13 +122,13 @@
     webpack-dev-middleware "^3.6.1"
     webpack-hot-middleware "^2.24.3"
 
-"@diez/createproject@^10.1.0":
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/@diez/createproject/-/createproject-10.1.0.tgz#86fb315d97fe895b23bd9a5d761fb019a322fbaa"
-  integrity sha512-kjY/JoYONuiQLj1IcAwXitlY7Bh2CWyK6M7Y+anTdajS7Hsgf/agzLjoLY2Bj7IYc/CNUbGiycrPO0o7cXZB8w==
+"@diez/createproject@^10.3.0":
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/@diez/createproject/-/createproject-10.3.0.tgz#8ebcebd01475323758022ee1dc9f298997f0a58d"
+  integrity sha512-AzRSIYZO7wG66syoI1NDfaPYG2L/z+A7nHQQZkzKIb0vjf7mirFgKI65FhVb5QGQwFgN3I/FhYBzNYG41x+XHg==
   dependencies:
-    "@diez/cli-core" "^10.1.0"
-    "@diez/storage" "^10.1.0"
+    "@diez/cli-core" "^10.3.0"
+    "@diez/storage" "^10.3.0"
     change-case "^3.1.0"
     enquirer "^2.3.0"
     fs-extra "^7.0.1"
@@ -159,15 +159,15 @@
   resolved "https://registry.yarnpkg.com/@diez/engine/-/engine-10.0.2.tgz#1c911ac66ba12e4484b160cec5e2180b86381b76"
   integrity sha512-OGqfxTyLmXoL5e27klzCrMQEy/FhVKt853y+3Bh/J/Leh+z38voVnUeS7CJlnyBC6i0m8jtccnSJp/t9043UUg==
 
-"@diez/engine@^10.1.0":
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/@diez/engine/-/engine-10.1.0.tgz#407dfc4b7834bebe0382a9aa7622330a3d9e7c11"
-  integrity sha512-NqnbKfP9dhZzGeVzfJhMvP/5aDxL1k0qdBRhLIcU66fUFvgg3RIZT9fMUuy4Dh56Q6f6G5mm6zu2dzOmukem9Q==
-
 "@diez/engine@^10.2.0-beta.2":
   version "10.2.0-beta.2"
   resolved "https://registry.yarnpkg.com/@diez/engine/-/engine-10.2.0-beta.2.tgz#1c9b71dff8ad831226ed39a3f9b997b723d65d43"
   integrity sha512-H53kK4q1FRhrzR2QYhcGeFBO93RoO20XS5W4MZT9cf/8KJFo0WeKcpGkpyM22GPtGUOK0HP+qtCi7GDMHXh9Eg==
+
+"@diez/engine@^10.3.0":
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/@diez/engine/-/engine-10.3.0.tgz#399d2627203e06f3e9be18dd0e6018af92cb16a0"
+  integrity sha512-G9r9uJC50f1/KVmHlt6Jje/24/kN3N7Y5XgsHZ8qfROJ4OCaMN6ZGNMPYTP0UZU2FAIAWbnrhAcL3vFDEWCG1Q==
 
 "@diez/extractors-core@^10.0.2":
   version "10.0.2"
@@ -239,17 +239,17 @@
     "@diez/framework-core" "^10.2.0-beta.2"
     fs-extra "^7.0.1"
 
-"@diez/sdk-inkstone@^10.1.0":
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/@diez/sdk-inkstone/-/sdk-inkstone-10.1.0.tgz#63ade2b38fe5fb71946eedbef06424e79ac38f70"
-  integrity sha512-TLMepXMQSgPkNeb339sIghlgmClKHt/6kmWJViJjvwW7+au6mDgrdxokPM4x72o+9BY56pVHrtmB7tJ8ck/4xA==
-  dependencies:
-    request "^2.88.0"
-
 "@diez/sdk-inkstone@^10.2.0-beta.2":
   version "10.2.0-beta.2"
   resolved "https://registry.yarnpkg.com/@diez/sdk-inkstone/-/sdk-inkstone-10.2.0-beta.2.tgz#fdfb09b268f65878ddba117898aa9166fd7df084"
   integrity sha512-WRkve1nhG9PfSWrEgQoQw4dp/ZM2e1CPW/ENP0fPNxUtMYMfWKJRWux3wxfJhp0HTsqMB7rSPBB5OT4Kmu988Q==
+  dependencies:
+    request "^2.88.0"
+
+"@diez/sdk-inkstone@^10.3.0":
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/@diez/sdk-inkstone/-/sdk-inkstone-10.3.0.tgz#7581dea3f69776e9739705f5151a3ee03efcf2bc"
+  integrity sha512-mGHmjYXGf4TcTxdPtqPXOhA8W2MVojCjGTER7JyibRz3mlOz4EhPdbRSOwNxSyuGmxi38CgB8MewfXFUAspbqQ==
   dependencies:
     request "^2.88.0"
 
@@ -305,10 +305,10 @@
     node-fetch "^2.5.0"
     uuid "^3.3.2"
 
-"@diez/storage@^10.1.0":
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/@diez/storage/-/storage-10.1.0.tgz#3e04a43ec02af7be257438ce0fd2d70c21a3ff3d"
-  integrity sha512-IL+xgkd0J6FuU8Bg5ZazuZMVIRdgFXY30bbTTa9mBo1L692pw3V9ZhWMEUJYNcY/a1ClrbHrU8qZwnq3KM9yng==
+"@diez/storage@^10.2.0-beta.2":
+  version "10.2.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@diez/storage/-/storage-10.2.0-beta.2.tgz#6d9718030e54bab199ca9113ef8c64295fcb08c8"
+  integrity sha512-4I2s4kQGgyeBneZb4xUyADmm5Pw+GxKr0A2ACb1aYU4MA+vxgkKHJbFf3jhVXOjEyWQBjgyekoz7InpScuNipA==
   dependencies:
     fs-extra "^7.0.1"
     handlebars "^4.1.1"
@@ -317,10 +317,10 @@
     node-fetch "^2.5.0"
     uuid "^3.3.2"
 
-"@diez/storage@^10.2.0-beta.2":
-  version "10.2.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@diez/storage/-/storage-10.2.0-beta.2.tgz#6d9718030e54bab199ca9113ef8c64295fcb08c8"
-  integrity sha512-4I2s4kQGgyeBneZb4xUyADmm5Pw+GxKr0A2ACb1aYU4MA+vxgkKHJbFf3jhVXOjEyWQBjgyekoz7InpScuNipA==
+"@diez/storage@^10.3.0":
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/@diez/storage/-/storage-10.3.0.tgz#3ce6aa7226fbf1259fe08fc8c516033e42326b6f"
+  integrity sha512-f+H0u29ffB5a6Hb4H0/2IHN21i27qco8aIqE9eDIHg4bmnRZqz1Nh4FBHmKEKeuFhbQRPb0R0oHHpeknrIOpmA==
   dependencies:
     fs-extra "^7.0.1"
     handlebars "^4.1.1"
@@ -1846,13 +1846,13 @@ dfa@^1.0.0:
   resolved "https://registry.yarnpkg.com/dfa/-/dfa-1.2.0.tgz#96ac3204e2d29c49ea5b57af8d92c2ae12790657"
   integrity sha512-ED3jP8saaweFTjeGX8HQPjeC1YYyZs98jGNZx6IiBvxW7JG5v492kamAQB3m2wop07CvU/RQmzcKr6bgcC5D/Q==
 
-diez@^10.1.0:
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/diez/-/diez-10.1.0.tgz#600def2419083dffffde20622a6d0503dc0605bb"
-  integrity sha512-Uehb8QG6xsgGwCLKIbODawiUttJV0kPkXPS/vbgvrA44OXpVpjycAcGfETL9FufQ9htMI1OKY+qKx6wrn8TAOA==
+diez@^10.3.0:
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/diez/-/diez-10.3.0.tgz#5bc3a27ab57d28cda383c47abd2a7f214564cef4"
+  integrity sha512-GZhsaTfQnovXM+qYKVXVO5F7piRQVCVYvnVc1uVem2ifmzm2uQWyuSuYYQZett5IaqYefAKGkpGwzgjDuZLJtQ==
   dependencies:
-    "@diez/cli-core" "^10.1.0"
-    "@diez/createproject" "^10.1.0"
+    "@diez/cli-core" "^10.3.0"
+    "@diez/createproject" "^10.3.0"
     app-module-path "^2.2.0"
     package-json "^6.3.0"
     semver "^6.0.0"

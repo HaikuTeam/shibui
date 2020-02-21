@@ -14,7 +14,7 @@
     "@diez/extractors": "^10.0.1",
     "@diez/start": "^10.0.1",
     "@diez/stdlib": "^10.0.1",
-    "diez": "^10.1.0",
+    "diez": "^10.3.0",
     "semver": "^6.0.0",
     "typescript": "^3.6.2"
   },
